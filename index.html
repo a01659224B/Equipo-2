@@ -52,21 +52,106 @@
             <div class="row align-items-end">
               <div class="col">
                 Carrucel restaurante
+                <div id="carouselExample" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
               </div>
               <div class="col">
-                Reservacion
+                <button type="button" class="btn">Reservación</button>
               </div>
               <div class="col">
                 Carrucel comida
+                <div id="carouselExample" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
               </div>
               <div class="col">
-                Descargar menú
+                <button type="button" class="btn">Descargar menú</button>
               </div>
             </div>
      </div>
         
-        
-                    
+        <form action="ejemplo.js">
+           <fieldset>
+              <legend>Reservación</legend>
+
+                <br><br>
+               <label  for="nombre">
+                   Nombre <br>
+                  <input type="text" name="Nombre" id="Nombre" size="40" >
+               </label>
+              <br><br>
+              <label  for="apellido">
+                  Apellido <br>
+                 <input type="text" " id="apellido" size="40">
+              </label>
+              <br><br>
+              <label  for="email">
+                   Correo<br>
+                  <input type="email" placeholder="info@ejemplo" size="40">
+              </label>
+               <br><br>
+              <label  for="telefono">
+                   Numero de celular<br>
+                  <input type="tel" >
+              </label>
+                 <br><br>
+                 <label  for="Numero">
+                    Numero de personas  <br>
+                   <input type="number" name="cantidad " id="cantidad" size="15" >
+                </label>
+                
+               </label>
+               <br><br>
+               <label for="cometario">
+                   Observaciones<br>
+                   <textarea name="" id="cometario" cols="50" rows="10"></textarea>
+               </label>
+           </fieldset>
+           <label for="tyc">
+              <input type="checkbox" id="tyc">
+               acepto terminos y condiciones 
+           </label>
+           <br><br>
+           <input type="submit" value="Enviar"class="boton">
+           <button type="reset" class="boton">Borrar</button>
+       </form>    
     </main>
     <footer>
     <p>Derechos de autor &copy; 2023 - Mi Página Web</p>
