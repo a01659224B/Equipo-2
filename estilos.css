@@ -11,5 +11,9 @@ nav{
     font-family: monospace; 
 }
 
-nav.ul{background: #F15F79;}
+#menu{
+    background-color: #F15F79;}
+    
 body{background-color: #eef2f3;}
+
+
