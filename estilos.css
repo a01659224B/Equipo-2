@@ -1,29 +1,39 @@
 
 #Título{padding:40px;
-        font-family:fantasy;
-        text-shadow: 2px 2px 3px #B24592;}
+    text-shadow: 2px 2px 3px ;
+        font-family:'mexicana';
+}
+@font-face {
+ font-family: 'mexicana';
+src: url(../imagenes/Berkshire_Swash/BerkshireSwash-Regular.ttf);       
+}
+
 header{background-color: #eef2f3;}
 
 nav{
-    background: #B24592; 
-    background: -webkit-linear-gradient(to right, #F15F79, #B24592); 
-    background: linear-gradient(to right, #F15F79, #B24592);
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
     font-family: monospace; 
 }
 
 #menu{
-    background-color: #F15F79;}
+    background-color: #74a4eb;}
 
-body{background: #70e1f5; 
-background: -webkit-linear-gradient(to right, #ffd194, #70e1f5); 
-background: linear-gradient(to right, #ffd194, #70e1f5); 
+body{background: #525252;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3d72b4, #525252);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3d72b4, #525252); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
 
 }
-
-footer{ background: #B24592;  
-    background: -webkit-linear-gradient(to right, #F15F79, #B24592);  
-    background: linear-gradient(to right, #F15F79, #B24592);
-    
+  .col {
+    padding: 10px;
+  }
+footer{justify-content: space-between;
+    text-align: center;
+     background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:#eef2f3
 
 }
 
