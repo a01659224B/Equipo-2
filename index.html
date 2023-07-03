@@ -12,48 +12,47 @@
 
 <body>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <header>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-       <h1 id="Título" class="text-center">Restaurante "El Molcajete"</h1>
-        <nav>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                  <a class="navbar-brand text-light" href="#">Inicio</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-4 mb-lg-0">
-                      <li class="nav-item mx-3">
-                        <a class="nav-link active text-light" aria-current="page" href="#">Conoce el restaurante</a>
-                      </li>
-                      <li class="nav-item mx-3">
-                        <a class="nav-link text-light" href="#">Sugerencias</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Menú
-                        </a>
-                        <ul id="menu" class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Comida</a></li>
-                          <li><a class="dropdown-item" href="#">Bebidas</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Buscar"" aria-label="Buscar">
-                      <button class="btn btn-outline-info text-light" type="submit">Buscar</button>
-                    </form>
-                  </div>
-                </div>
-              </nav>
-        </nav>
-        
-    </header>
-    <main>
-        <div class="text-center">
-            <div class="col align-items-end">
-              <div class="row">
+    <!-- Barra de navegación-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a id="Título"class="navbar-brand mr-auto" href="#!">Restaurante "El molcajete"</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-3 mb-4 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#!">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reservar.html">Reservar</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Menú    
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Comida</a></li>
+                <li><a class="dropdown-item" href="#">Bebidas</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-auto p-2" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-info text-light" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Encabezado-->
+    <header class="py-5">
+      <div class="container px-lg-5">
+          <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
+              <div class="m-4 m-lg-5">
                 <div id="carouselExample" class="carousel slide ">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -77,44 +76,77 @@
                   </button>
                 </div>
               </div>
-              <div class="row mt-4 justify-content-center">
-                <div class="col-4">
-                  <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Reservación</button>
-                </div>
+                  <h1 class="display-5 fw-bold">¡Conoce el restaurante!</h1>
+                  <p class="fs-4">¡Ven a saborear la exquisita fusión de sabores en nuestro restaurante, donde cada bocado es un deleite culinario que te transportará a un mundo de placer gastronómico! </p>
+                  <a class="btn btn-primary btn-lg" href="reservar.html">Reservar</a>
               </div>
-              
-              <div class="row mt-4">
-                <div id="carouselExample" class="carousel slide">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="imagenes/comida4.jpg" class="d-block w-100" alt="comida1" style="height: 400px;">
+          </div>
+      </div>
+  </header>
+    
+    <main>
+      <section class="pt-4">
+            <div class="container px-lg-5">
+                <div class="row gx-lg-5">
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0">
+                            <div class="card-body text-center">
+                                <div class="feature bg-primary bg-gradient"><i class="bi bi-collection"></i></div>
+                                <img src="imagenes/comida4.jpg" class="d-block w-100" alt="comida1">
+                            </div>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                      <img src="imagenes/comida5.jpg" class="d-block w-100" alt="comida2" style="height: 400px;">
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-cloud-download"></i></div>
+                                <h2 class="fs-4 fw-bold">Conoce el menú</h2>
+                                <p class="mb-0">Exquisitos platillos y una selección de bebidas cautivadoras, creando una experiencia gastronómica inolvidable.</p>
+                                <a class="mt-4 btn btn-primary btn-lg" href="#!">Ver menú</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                      <img src="imagenes/comida6.jpg" class="d-block w-100" alt="comida3" style="height: 400px;">
-                    </div>
+
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                      <div class="card bg-light border-0">
+                          <div class="card-body text-center">
+                              <div class="feature bg-primary bg-gradient"><i class="bi bi-collection"></i></div>
+                              <img src="imagenes/comida5.jpg" class="d-block w-100" alt="comida1">
+                          </div>
+                      </div>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
+
+                  <div class="col-lg-6 col-xxl-4 mb-5">
+                    <div class="card bg-light border-0">
+                        <div class="card-body text-center">
+                            <div class="feature bg-primary bg-gradient"><i class="bi bi-collection"></i></div>
+                            <img src="imagenes/comida6.jpg" class="d-block w-100" alt="comida1">
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col-lg-6 col-xxl-4 mb-5">
+                  <div class="card bg-light border-0">
+                      <div class="card-body text-center">
+                          <div class="feature bg-primary bg-gradient"><i class="bi bi-collection"></i></div>
+                          <img src="imagenes/comida5.jpg" class="d-block w-100" alt="comida1">
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-6 col-xxl-4 mb-5">
+                <div class="card bg-light border-0">
+                    <div class="card-body text-center">
+                        <div class="feature bg-primary bg-gradient"><i class="bi bi-collection"></i></div>
+                        <img src="imagenes/comida6.jpg" class="d-block w-100" alt="comida1">
+                    </div>
+                </div>
+            </div>
+
+            </div>
                   
               </div>
-              <div class="row mt-4 justify-content-center">
-                <div class="col-4">
-                  <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Descargar menu</button>
-                </div>
-              </div>
-              <br><br>
-            </div>
-          </div>     
+               
     </main>
     <footer>
    
