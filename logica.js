@@ -18,3 +18,4 @@ var checkbox = document.getElementById("tyc");
 
     var formulario = document.querySelector("form");
     formulario.addEventListener("submit", validarFormulario);
+
