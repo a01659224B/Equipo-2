@@ -7,24 +7,15 @@ function validarNumeroCelular() {
     }
 }
 
-var checkbox = document.getElementById("tyc");
-
-    function validarFormulario(event) {
-        if (!checkbox.checked) {
-            alert("Debe aceptar los términos y condiciones para enviar el formulario.");
-            event.preventDefault(); 
-        }
-    }
-
-    var formulario = document.querySelector("form");
-    formulario.addEventListener("submit", validarFormulario);
-    document.getElementById("myreserva").addEventListener("submit", function(evento) {
-        evento.preventDefault();
+        document.getElementById("myForm").addEventListener("submit", function(event){
+          event.preventDefault();
         // Obtener los valores de los campos del formulario
         var telefono = document.getElementById("telefono").value;
         var numPersonas = parseInt(document.getElementById("numpersonas").value);
         var fecha = new Date(document.getElementById("fecha").value);
         var hoy = new Date();
+
+      
       
         // Validar los campos del formulario
         if (telefono.length !== 10 || numPersonas <= 0 || fecha < hoy) {
@@ -49,4 +40,5 @@ var checkbox = document.getElementById("tyc");
           });
         }
       });
+    
 
